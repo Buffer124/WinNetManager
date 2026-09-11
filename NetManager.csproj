@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Tuong thich tot nhat voi ca SDK net8.0 va net9.0 -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <AssemblyName>WinNetManager</AssemblyName>
+    <RootNamespace>WinNetManager</RootNamespace>
+
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyTitle>Windows Network Adapter Manager</AssemblyTitle>
+    <Product>Windows Network Manager</Product>
+    <Company>Minh Duy Utility</Company>
+
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseWindowsForms>false</UseWindowsForms>
+
+    <!-- Xuat ban Single-File chay duoc tren ca 32-bit va 64-bit -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    
+    <!-- Bat ho tro COM Interop bat buoc cho System.Management (WMI) -->
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <PublishTrimmed>false</PublishTrimmed>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+    <StripSymbols>true</StripSymbols>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+
+    <NoWarn>$(NoWarn);CS8500;CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
