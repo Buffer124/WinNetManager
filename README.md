@@ -50,8 +50,49 @@ Tạo Pull Request.
 
 📄 Bản Quyền (License)
 Dự án được phát hành dưới giấy phép MIT License.
+---
+Dự án WinNetManager của bạn được viết bằng ngôn ngữ nào (C#, C++, Python, hay PowerShell)
+và có giao diện đồ họa (GUI) hay dòng lệnh (CLI)? Hãy chia sẻ thêm để README được tùy chỉnh sát nhất với tính năng thực tế.
+
+# WinNetManager
+
+A lightweight, high-performance network management utility for Windows, designed to simplify adapter configuration, IP switching, DNS management, and network troubleshooting.
 
 ---
 
-Dự án WinNetManager của bạn được viết bằng ngôn ngữ nào (C#, C++, Python, hay PowerShell)
-và có giao diện đồ họa (GUI) hay dòng lệnh (CLI)? Hãy chia sẻ thêm để README được tùy chỉnh sát nhất với tính năng thực tế.
+## 🚀 Key Features
+
+* **Network Adapter Control:** Easily view, enable, disable, and monitor network interfaces (Ethernet, Wi-Fi, virtual adapters).
+* **Flexible IP Configuration:** Quickly toggle between Dynamic (DHCP) and Static IP profiles.
+* **Fast DNS Switcher:** Pre-configured with popular secure DNS providers (Cloudflare, Google, OpenDNS, Quad9).
+* **Diagnostic & Repair Tools:** Built-in one-click tools for Ping, Traceroute, DNS cache flush (`ipconfig /flushdns`), and TCP/IP stack reset.
+* **Native & Portable:** Standalone executable with zero external runtime dependencies.
+
+---
+
+## 📋 System Requirements
+
+* **Operating System:** Windows 10 / 11 / Windows Server (32-bit & 64-bit).
+* **Privileges:** Requires Administrator rights (**Run as Administrator**) to modify network adapter settings and system services.
+
+---
+
+## 🛠️ Installation & Usage
+
+1. Download the latest release from the [Releases](https://github.com/Buffer124/WinNetManager/releases) page.
+2. Extract the archive (if applicable) or run `WinNetManager.exe` directly.
+3. Make sure to launch the application with **Run as Administrator**.
+
+---
+
+## 🔒 Security & Integrity
+
+* Built-in system command hardening.
+* Tamper detection and runtime integrity checks.
+* Authenticode digital signature verification.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
